@@ -2169,7 +2169,7 @@ public class Workspace extends PagedView
                         tv.getLayout().getLineTop(0);
             }
             destCanvas.translate(-v.getScrollX() + padding / 2, -v.getScrollY() + padding / 2);
-            destCanvas.clipRect(clipRect, Op.REPLACE);
+            destCanvas.clipRect(clipRect, Op.INTERSECT);
             v.draw(destCanvas);
 
             // Restore text visibility of FolderIcon if necessary

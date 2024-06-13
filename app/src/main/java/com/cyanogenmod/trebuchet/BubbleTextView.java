@@ -175,7 +175,7 @@ public class BubbleTextView extends androidx.appcompat.widget.AppCompatTextView 
         // they set scrollX and scrollY to large values to achieve centered text
         destCanvas.save();
         destCanvas.translate(-getScrollX() + padding / 2, -getScrollY() + padding / 2);
-        destCanvas.clipRect(clipRect, Op.DIFFERENCE);
+        destCanvas.clipRect(clipRect, Op.INTERSECT);
         draw(destCanvas);
         destCanvas.restore();
     }
