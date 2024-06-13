@@ -14,8 +14,10 @@
      limitations under the License.
 -->
 <com.cyanogenmod.trebuchet.AppsCustomizeTabHost
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:launcher="http://schemas.android.com/apk/res/com.cyanogenmod.trebuchet"
+    xmlns:launcher="http://schemas.android.com/apk/res-auto"
     android:background="#FF000000">
     <LinearLayout
         android:id="@+id/apps_customize_content"
